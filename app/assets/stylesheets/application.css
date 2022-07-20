@@ -16,8 +16,8 @@
 .header {
   padding: 3px 3px;
   margin-top: 10px;
-  margin-left: 10rem;
-  width: 65rem;
+  margin-left: 250px;
+  width: 2020px;
   height: 2rem;
   background-color: #fff;
 }
@@ -38,7 +38,7 @@ body {
   border-radius: 15px;
   margin-left: -240px;
   overflow-y: auto;
-  background: rgb(60, 129, 156);
+  background-color: rgba(30, 114, 142, 100%);
 }
 
 #page-content-wrapper {
@@ -134,3 +134,6 @@ body {
   background-color: white;
   outline: none !important;
 }
+
+  
+  

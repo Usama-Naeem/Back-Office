@@ -6,5 +6,12 @@ class Admin < ApplicationRecord
 
   #enum role: %i[super_admin admin]
 
-  enum :role, { super_admin: 0, admin: 1}
+  enum role: [:super_admin, :admin]
+  after_initialize :set_default_role, :if => :new_record?
+
+  private
+
+  def set_default_role
+    self.role ||= :admin
+  end
 end
