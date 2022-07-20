@@ -2,6 +2,12 @@ class AdminController < ApplicationController
   def dashboard
   end
 
+  def assesment
+  end
+
+  def providers
+  end
+
   def members
     @admins = Admin.all
   end
