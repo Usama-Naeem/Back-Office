@@ -9,7 +9,7 @@ class AdminController < ApplicationController
   end
 
   def members
-    @admins = Admin.all
+    @admins = Admin.all.page(params[:page])
   end
 
   def show_member
